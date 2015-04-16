@@ -5,7 +5,12 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD_Lab2", "TDD_Lab2\TDD_Lab2.csproj", "{E94DAB31-BFE1-4505-865A-B69CFA1D0A2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Person.Test", "PersonTest\Person.Test.csproj", "{81F28750-C4EA-4DA9-B732-3CD767EA1484}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonTest.cs", "PersonTest\PersonTest.cs.csproj", "{81F28750-C4EA-4DA9-B732-3CD767EA1484}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{877E22F6-88E9-4466-9BAA-9F3A0AF99E0E}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

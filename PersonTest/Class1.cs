@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PersonTest
+namespace Person.Test
 {
     public class Class1
     {
