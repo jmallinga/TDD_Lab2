@@ -9,5 +9,13 @@ namespace TDD_Lab2
     public class Person
 
     {
+        public Person()
+        {
+
+
+
+
+        }
+
     }
 }
