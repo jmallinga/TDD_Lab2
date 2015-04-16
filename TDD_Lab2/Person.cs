@@ -38,9 +38,21 @@ namespace TDD_Lab2
             return age;
         }
 
-        public object VoteEligible()
+        public string VoteEligible()
         {
-            throw new NotImplementedException();
+            if (this.citizen == "Y")
+            {
+                return "Yes";
+            }
+
+            else
+            {
+                return "No";
+            }
         }
+
+
+
+
     }
 }
