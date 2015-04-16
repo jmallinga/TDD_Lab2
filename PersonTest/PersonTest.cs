@@ -82,14 +82,17 @@ namespace TDDLab2.Test
         }
 
         [Fact]
-        public void IsFirstLast()
+        public void IsNameFormatting()
         {
             var girl1 = new Person();
             girl1.firstName = "Jane";
             girl1.lastName = "Baker";
 
             var actual = girl1.FormatAsFirstLast();
-            Assert.Equal("Jane Baker",actual);
+            var actual2 = girl1.FormatAsLastFirst();
+            
+            Assert.Equal("Jane Baker", actual);
+            Assert.Equal("Baker, Jane", actual2);
 
         }
 

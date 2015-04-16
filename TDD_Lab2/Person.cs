@@ -63,9 +63,14 @@ namespace TDD_Lab2
 
         }
 
-        public object FormatAsFirstLast()
+        public string FormatAsFirstLast()
         {
-            throw new NotImplementedException();
+            return this.firstName + " " + this.lastName;
+        }
+
+        public string FormatAsLastFirst()
+        {
+            return this.lastName + ", " + this.firstName;
         }
     }
 }
