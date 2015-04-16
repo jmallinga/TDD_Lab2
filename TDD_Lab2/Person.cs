@@ -16,16 +16,16 @@ namespace TDD_Lab2
         public int socialSecurity { get; set; }
         public string citizen { get; set; }
         
-        public int CompareTo(Person Other) 
+        public int CompareTo(Person other) 
         
         {
-            if (this.lastName == Other.lastName)
+            if (this.lastName == other.lastName)
             {
-                return this.birthday.CompareTo(this.birthday);            
+                return this.birthday.CompareTo(other.birthday);            
             
             }
 
-            return Other.lastName.CompareTo(this.lastName);
+            return this.lastName.CompareTo(other.lastName);
         
         }
         
