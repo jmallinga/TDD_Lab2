@@ -33,7 +33,8 @@ namespace TDD_Lab2
 
         public object CalculateAge()
         {
-            throw new NotImplementedException();
+            var age = DateTime.Today - birthday;
+            return age;
         }
     }
 }
