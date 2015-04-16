@@ -62,5 +62,10 @@ namespace TDD_Lab2
 
 
         }
+
+        public object FormatAsFirstLast()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

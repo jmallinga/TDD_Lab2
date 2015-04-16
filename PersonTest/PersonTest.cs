@@ -66,6 +66,7 @@ namespace TDDLab2.Test
             
         }
 
+
         [Fact]
         public void TestLastNameChange()
         {
@@ -79,6 +80,21 @@ namespace TDDLab2.Test
             Assert.Equal(maiden, girl1.maidenName);
             Assert.Equal(married, girl1.lastName);
         }
+
+        [Fact]
+        public void IsFirstLast()
+        {
+            var girl1 = new Person();
+            girl1.firstName = "Jane";
+            girl1.lastName = "Baker";
+
+            var actual = girl1.FormatAsFirstLast();
+            Assert.Equal("Jane Baker",actual);
+
+        }
+
+
+
 
 
         
