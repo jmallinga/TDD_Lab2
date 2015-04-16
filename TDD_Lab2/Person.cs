@@ -11,6 +11,7 @@ namespace TDD_Lab2
     {
         public string firstName { get; set; }
         public string lastName { get; set; }
+        public string maidenName { get; set; }
         public DateTime birthday { get; set; }
         public int socialSecurity { get; set; }
         public string citizen { get; set; }
@@ -54,5 +55,10 @@ namespace TDD_Lab2
 
 
 
+
+        public void ChangeLastName(string married)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

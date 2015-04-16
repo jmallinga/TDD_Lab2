@@ -65,5 +65,24 @@ namespace TDDLab2.Test
             Assert.Equal(expected,actual);
             
         }
+
+        [Fact]
+        public void TestLastNameChange()
+        {
+            var girl1 = new Person();
+            var maiden = "Smith";
+            var married = "Miller";
+
+            girl1.lastName = maiden;
+            girl1.ChangeLastName(married);
+
+            Assert.Equal(maiden, girl1.maidenName);
+            Assert.Equal(married, girl1.lastName);
+        }
+
+
+        
+
+
     }
 }
