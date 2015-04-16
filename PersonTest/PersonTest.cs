@@ -15,7 +15,7 @@ namespace TDDLab2.Test
         {
             var Guy1 = new Person("John");
 
-            Assert.Equal("John", Guy1.firstname);
+            Assert.Equal("John", Guy1.firstName);
         
 
         

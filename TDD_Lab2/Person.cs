@@ -9,12 +9,17 @@ namespace TDD_Lab2
     public class Person
 
     {
+        public string firstName { get; set; }
+        
+        
         public Person()
         {
 
+        }
 
-
-
+        public Person(string n)
+        {
+            this.firstName = n;
         }
 
     }
