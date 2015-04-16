@@ -31,6 +31,15 @@ namespace TDDLab2.Test
 
         }
 
+        [Fact]
+        public void HasSocialSecurityNumber()
+        {
+
+            var Guy1 = new Person();
+            var expected = SetSocialSecurityNumber(999999999);
+            
+
+        }
 
 
     }
