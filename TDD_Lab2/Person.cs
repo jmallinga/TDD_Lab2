@@ -10,6 +10,9 @@ namespace TDD_Lab2
 
     {
         public string firstName { get; set; }
+        public string lastName { get; set; }
+        public DateTime birthday { get; set; }
+        private int socialSecurity { get; set; }
         
         
         public Person()
@@ -17,10 +20,12 @@ namespace TDD_Lab2
 
         }
 
-        public Person(string n)
+        public Person(string n) : this()
         {
             this.firstName = n;
         }
 
+
+        
     }
 }

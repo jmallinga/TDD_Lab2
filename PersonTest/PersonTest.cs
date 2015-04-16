@@ -16,10 +16,21 @@ namespace TDDLab2.Test
             var Guy1 = new Person("John");
 
             Assert.Equal("John", Guy1.firstName);
-        
-
-        
         }
+
+        [Fact]
+        public void HasLastNameAndBirthday()
+        {
+            var Guy1 = new Person();
+            Guy1.lastName = "Mallinga";
+            Guy1.birthday = new DateTime(1987, 06, 05);
+            var testDate = new DateTime(1987, 06, 05);
+
+            Assert.Equal("Mallinga", Guy1.lastName);
+            Assert.Equal(testDate, Guy1.birthday);
+
+        }
+
 
 
     }
