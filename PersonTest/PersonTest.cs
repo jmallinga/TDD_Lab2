@@ -96,7 +96,22 @@ namespace TDDLab2.Test
 
         }
 
+        [Fact]
+        public void IsNameBirthdaySorted()
+        {
+            List<Person> people = new List<Person>()
+            { new Person {firstName = "Judy", lastName = "Miller", birthday = new DateTime(2008, 04, 15)},
+                new Person {firstName = "Jon", lastName = "Baker", birthday = new DateTime(1966, 11, 02)},
+                new Person {firstName = "Nancy", lastName = "Miller", birthday = new DateTime(1986, 07, 01)}
+            };
+            
+            people.Sort();
 
+            Assert.Equal("Jon", people[0].firstName);
+            Assert.Equal("Nancy", people[1].firstName);
+            Assert.Equal("Judy", people[2].firstName);
+
+        }
 
 
 
