@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TDD_Lab2
 {
-    public class Person
+    public class Person : IComparable<Person>
 
     {
         public string firstName { get; set; }
@@ -16,6 +16,18 @@ namespace TDD_Lab2
         public int socialSecurity { get; set; }
         public string citizen { get; set; }
         
+        public int CompareTo(Person Other) 
+        
+        {
+            if (this.lastName == Other.lastName)
+            {
+                return this.birthday.CompareTo(this.birthday);            
+            
+            }
+
+            return Other.lastName.CompareTo(this.lastName);
+        
+        }
         
         public Person()
         {
@@ -72,5 +84,10 @@ namespace TDD_Lab2
         {
             return this.lastName + ", " + this.firstName;
         }
+
+        
+
+
+
     }
 }
