@@ -13,6 +13,7 @@ namespace TDD_Lab2
         public string lastName { get; set; }
         public DateTime birthday { get; set; }
         public int socialSecurity { get; set; }
+        public string citizen { get; set; }
         
         
         public Person()
@@ -35,6 +36,11 @@ namespace TDD_Lab2
         {
             var age = DateTime.Today - birthday;
             return age;
+        }
+
+        public object VoteEligible()
+        {
+            throw new NotImplementedException();
         }
     }
 }

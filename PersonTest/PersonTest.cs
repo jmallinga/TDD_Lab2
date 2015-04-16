@@ -54,6 +54,16 @@ namespace TDDLab2.Test
 
         }
 
+        [Fact]
+        public void TestVoteEligible()
+        {
+            var Guy1 = new Person();
+            Guy1.citizen = "N";
+            var expected = "No";
+            var actual = Guy1.VoteEligible();
 
+            Assert.Equal(expected,actual);
+            
+        }
     }
 }
