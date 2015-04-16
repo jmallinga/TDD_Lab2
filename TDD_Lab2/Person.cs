@@ -50,15 +50,17 @@ namespace TDD_Lab2
             {
                 return "No";
             }
+
+
         }
 
 
-
-
-
-        public void ChangeLastName(string married)
+        public void ChangeLastName(string newLastName)
         {
-            throw new NotImplementedException();
+            this.maidenName = this.lastName;
+            this.lastName = newLastName;
+
+
         }
     }
 }
