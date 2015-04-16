@@ -25,10 +25,15 @@ namespace TDD_Lab2
             this.firstName = n;
         }
 
-        public SetSocialSecurityNumber (int a)
+        public void SetSocialSecurityNumber(int a)
         {
             this.socialSecurity = a; 
             
+        }
+
+        public object CalculateAge()
+        {
+            throw new NotImplementedException();
         }
     }
 }

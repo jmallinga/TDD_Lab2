@@ -41,6 +41,19 @@ namespace TDDLab2.Test
             Assert.Equal(999999999, Guy1.socialSecurity);
         }
 
+        [Fact]
+        public void TestAge()
+        {
+            var Guy1 = new Person();
+            var testBirthday = new DateTime(1962, 10, 18);
+            Guy1.birthday = testBirthday;
+
+            var actualAge = Guy1.CalculateAge();
+
+            Assert.Equal(DateTime.Today - testBirthday, actualAge);
+
+        }
+
 
     }
 }
