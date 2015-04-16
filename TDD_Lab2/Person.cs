@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TDD_Lab2
 {
-    public class Class1
+    public class Person
+
     {
     }
 }
