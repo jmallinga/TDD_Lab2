@@ -36,9 +36,9 @@ namespace TDDLab2.Test
         {
 
             var Guy1 = new Person();
-            var expected = SetSocialSecurityNumber(999999999);
-            
+            Guy1.SetSocialSecurityNumber(999999999);
 
+            Assert.Equal(999999999, Guy1.socialSecurity);
         }
 
 
